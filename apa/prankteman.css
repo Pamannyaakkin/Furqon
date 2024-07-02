@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ff0000;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.error-box {
+    text-align: center;
+    animation: glitch 1s infinite;
+}
+
+.error-box h1 {
+    font-size: 5em;
+    margin-bottom: 20px;
+}
+
+.error-box p {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Glitch Animation */
+@keyframes glitch {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-5px, 5px);
+    }
+    40% {
+        transform: translate(5px, -5px);
+    }
+    60% {
+        transform: translate(-5px, -5px);
+    }
+    80% {
+        transform: translate(5px, 5px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
